@@ -21,6 +21,9 @@ Open WariHash form
 <script type="text/babel">
 class App extends React.Component {
 
+    unmount = () => {
+        ReactDOM.unmountComponentAtNode(ReactDOM.findDOMNode(this).parentNode);
+    }
     render() {
         return (
            <div className="app-container" 
@@ -28,6 +31,9 @@ class App extends React.Component {
            color: "white", zIndex: "58458348948348", position: "absolute", 
            top: "0", left: "0"}}>
                 <h5>React app rendered</h5>
+              <button className="close-app" onClick={()=> this.unmount()}> 
+                <p>Close app</p>
+              </button>
            </div>
         );
     }
@@ -41,6 +47,8 @@ document.getElementById('click-me').addEventListener("click", function(){
     );
 
 }); 
+
+
 </script>
 
 
