@@ -6,7 +6,7 @@
 
 <body>
 
-<button id="click-me">
+<button id="open-warihash">
 Open WariHash form
 </button>
 
@@ -16,6 +16,9 @@ Open WariHash form
 <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.21.1/babel.min.js"></script>
 
 <script type="text/babel">
+
+
+
 class App extends React.Component {
 
     unmount = () => {
@@ -36,7 +39,7 @@ class App extends React.Component {
     }
 }
 
-document.getElementById('click-me').addEventListener("click", function(){
+document.getElementById('open-warihash').addEventListener("click", function(){
     
     ReactDOM.render(
         <App />,
