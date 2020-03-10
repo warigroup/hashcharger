@@ -10,9 +10,6 @@
 Open WariHash form
 </button>
 
-<div id="render-me">
-
-</div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react-dom.js"></script>
@@ -43,7 +40,7 @@ document.getElementById('click-me').addEventListener("click", function(){
     
     ReactDOM.render(
         <App />,
-        document.getElementById('render-me')
+        document.body.appendChild(document.createElement("DIV"))
     );
 
 }); 
