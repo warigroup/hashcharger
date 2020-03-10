@@ -7,14 +7,12 @@
 <body>
 
 <button id="click-me">
- CLICK ME
+Open WariHash form
 </button>
 
 <div id="render-me">
 
 </div>
-
-
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react-dom.js"></script>
@@ -25,13 +23,18 @@ class App extends React.Component {
 
     render() {
         return (
-           <h1>RENDERED</h1>
+           <div className="app-container" 
+           style={{ width: "100vw", height: "100vh", background: "black", 
+           color: "white", zIndex: "58458348948348", position: "absolute", 
+           top: "0", left: "0"}}>
+                <h5>React app rendered</h5>
+           </div>
         );
     }
 }
 
 document.getElementById('click-me').addEventListener("click", function(){
-
+    
     ReactDOM.render(
         <App />,
         document.getElementById('render-me')
