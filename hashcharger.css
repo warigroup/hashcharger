@@ -1,0 +1,83 @@
+.hashcharger-widget {
+  animation-name: fadein-animation;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  transition-timing-function: ease-out;
+  width: 100vw; 
+  height: 100vh; 
+  background: white;
+  z-index: 58458348948340; 
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  overflow-x: hidden !important;
+}
+
+.widget-fadeout {
+  animation-name: fadeout-animation;
+  animation-duration: 0.45s;
+  animation-iteration-count: 1;
+  transition-timing-function: ease-out;
+}
+
+.hashcharger-opened {
+  overflow: hidden !important;
+}
+
+@keyframes fadein-animation {
+  0% {
+    position: absolute;
+    top: -30%;
+    left: 0;
+    opacity: 0;
+  }
+  100% {
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes fadeout-animation {
+  0% {
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 1;
+  }
+  100% {
+    position: absolute;
+    top: -30%;
+    left: 0;
+    opacity: 0;
+  }
+}
+
+.hashcharger-close-button {
+  z-index: 58458348948341; 
+  position: absolute !important;
+  top: 30px !important;
+  right: 55px !important;
+  padding: 0px !important;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: 0.5s ease all;
+  font-size: 27px !important;
+}
+
+.svg-close-icon {
+  width: 26px;
+  height: 26px;
+}
+
+.svg-close-icon:hover {
+  fill: rgba(0,0,0,0.55);
+}
+
+:focus { outline:none; }
+::-moz-focus-inner { border:0; }
+
