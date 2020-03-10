@@ -6,27 +6,38 @@
 
 <body>
 
+<button id="click-me">
+ CLICK ME
+</button>
 
-<div id="root"></div>
+<div id="render-me">
+
+</div>
+
+
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react-dom.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.21.1/babel.min.js"></script>
 
 <script type="text/babel">
-class Greeting extends React.Component {
+class App extends React.Component {
+
     render() {
         return (
-            <p>Hello wojiiuiuuiihuhiurld</p>
+           <h1>RENDERED</h1>
         );
     }
 }
 
+document.getElementById('click-me').addEventListener("click", function(){
 
-ReactDOM.render(
-    <Greeting />,
-    document.getElementById('root')
-);
+    ReactDOM.render(
+        <App />,
+        document.getElementById('render-me')
+    );
+
+}); 
 </script>
 
 
