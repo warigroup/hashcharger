@@ -1,7 +1,10 @@
 <!doctype html>
 <html lang="en">
-<head><meta charset="utf-8"/>
+<head>
+
+<meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
+
 </head>
 
 <body>
@@ -11,13 +14,38 @@ Open WariHash form
 </button>
 
 
+<script>
+    /* Beginning of async download code. */
+    window.onload = function(){
+        function loadjscssfile(filename, filetype) {
+            if(filetype == "js") {
+                var cssNode = document.createElement('script');
+                cssNode.setAttribute("type", "text/javascript");
+                cssNode.setAttribute("src", filename);
+            } else if(filetype == "css") {
+                var cssNode = document.createElement("link");
+                cssNode.setAttribute("rel", "stylesheet");
+                cssNode.setAttribute("type", "text/css");
+                cssNode.setAttribute("href", filename);
+            }
+            if(typeof cssNode != "undefined")
+                document.getElementsByTagName("head")[0].appendChild(cssNode);
+        }
+        loadjscssfile("//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css", "css");
+        loadjscssfile("//stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css", "css");
+        loadjscssfile("//fonts.googleapis.com/css?family=Open+Sans:300&amp;subset=latin,cyrillic-ext,latin-ext,cyrillic,greek-ext,greek,vietnamese", "css");
+        loadjscssfile("/css/style.css", "css");
+        loadjscssfile("//cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react.js", "js");
+        loadjscssfile("//cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react-dom.js", "js");
+        loadjscssfile("//cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.21.1/babel.min.js", "js");
+    };
+    /* End of async download code. */
+</script>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react-dom.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.21.1/babel.min.js"></script>
-
 <script type="text/babel">
-
-
 
 class App extends React.Component {
 
@@ -27,13 +55,30 @@ class App extends React.Component {
     render() {
         return (
            <div className="app-container" 
-           style={{ width: "100vw", height: "100vh", background: "black", 
-           color: "white", zIndex: "58458348948348", position: "absolute", 
+           style={{ width: "100vw", height: "100vh", background: "white", 
+           color: "black", zIndex: "58458348948348", position: "absolute", 
            top: "0", left: "0"}}>
-                <h5>React app rendered</h5>
-              <button className="close-app" onClick={()=> this.unmount()}> 
-                <p>Close app</p>
-              </button>
+           <div className="wrapper" style={{padding: "25px"}}>
+           <div className="navigation">
+                <div className="column-1" style={{width: '50%', display: "inline-block"}}>
+                        <h1>Order Hashing Power</h1>
+                </div>
+                <div className="column-2" style={{width: '50%', display: "inline-block"}}>
+                <button className="close-app" onClick={()=> this.unmount()}> 
+                    <h1>&times;</h1>
+                    <i className="fa fa-times" style={{fontSize: "20px", color: "black"}}></i>
+
+                </button>
+                </div>
+
+           </div>
+            
+                <div className="body">
+                    <h5>React app rendered</h5>
+                </div>
+                
+                
+            </div>
            </div>
         );
     }
@@ -47,12 +92,8 @@ document.getElementById('open-warihash').addEventListener("click", function(){
     );
 
 }); 
-
-
 </script>
 
 
 </body>
-
-
 </html>
