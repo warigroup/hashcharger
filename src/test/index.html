@@ -18,19 +18,27 @@ Open WariHash form
 <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/redux/4.0.5/redux.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.21.1/babel.min.js"></script>
+<script crossorigin src="https://unpkg.com/axios@0.17/dist/axios.min.js"></script>
 
 <!-- PRE COMPILE BABEL -->
 <script type="text/babel">
 
 class App extends React.Component {
 
+    constructor(); {
+        this.state = {
+            page: "orderpage"
+        }
+    }
+
     unmount = () => {
         ReactDOM.unmountComponentAtNode(ReactDOM.findDOMNode(this).parentNode);
     }
+
     render() {
 
         const orderPage = () => {
-              <div>OrderPage</div>  
+            <div>OrderPage</div>  
         };
 
         const invoicePage = () => {
@@ -53,16 +61,13 @@ class App extends React.Component {
            <div className="wrapper" style={{padding: "25px"}}>
            <div className="navigation">
                 <div className="column-1" style={{width: '50%', display: "inline-block"}}>
-                        <h1>Buy Hashing Power</h1>
+                  <h1>Buy Hashing Power</h1>
                 </div>
                 <div className="column-2" style={{width: '50%', display: "inline-block"}}>
-                <button className="close-app" onClick={()=> this.unmount()}> 
+                <button className="close-app" onClick={() => this.unmount()}> 
                     <h1>&times;</h1>
-                    <i className="fa fa-times" style={{fontSize: "20px", color: "black"}}></i>
-
                 </button>
                 </div>
-
            </div>
             
                 <div className="body">
