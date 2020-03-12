@@ -5,14 +5,12 @@
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
 
-<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link href="styles.css" rel="stylesheet">
 </head>
 
 <body>
 
-<button id="open-warihash">
-Open WariHash form
-</button>
+<button id="open-warihash">Open WariHash form</button>
 
 
 <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
@@ -23,17 +21,17 @@ Open WariHash form
 
 <!-- PRE COMPILE BABEL -->
 <script type="text/babel">
-
+ 
 class App extends React.Component {
     constructor() {
         super() 
         this.state = {
             page: "orderpage",
-            duration: "",
             durationfocus: false,
             durationCliked: false,
             duration_example: ""
         }
+    
     }
   
     unmount = () => {
@@ -41,15 +39,25 @@ class App extends React.Component {
     }
 
 
-
     render() {
         const {duration, durationfocus, durationCliked, duration_example} = this.state;
 
-
         function orderPage() {
+           
 
             return (
                <div>
+                    <div className="form-group">
+                        <label>Miner Location</label>
+                        <select>
+                            <option 
+                            className="selectstyles" 
+                            value="NA East"
+                            >
+                            North America East
+                            </option>
+                        </select>
+                    </div>
                     <div className="form-group">
                         <label htmlFor="duration" className="inputlabel">
                         Order Duration:
@@ -103,6 +111,8 @@ class App extends React.Component {
                           <br />
                         </div>
                     </div>
+
+
                </div>
             )
         }
