@@ -5,6 +5,9 @@
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
 
+<style>
+
+</style>
 </head>
 
 <body>
@@ -12,41 +15,57 @@
 <button id="open-warihash">
 Open WariHash form
 </button>
+<div id="react-statusmanager">
 
+</div>
 
 <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/redux/4.0.5/redux.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.21.1/babel.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.21.1/babel.min.js"></script> 
 <script crossorigin src="https://unpkg.com/axios@0.17/dist/axios.min.js"></script>
 
 <!-- PRE COMPILE BABEL -->
 <script type="text/babel">
 
 class App extends React.Component {
-
+    constructor() {
+        super() 
+        this.state = {
+            page: "orderpage"
+        }
+    }
   
     unmount = () => {
         ReactDOM.unmountComponentAtNode(ReactDOM.findDOMNode(this).parentNode);
     }
 
+
+
     render() {
+        function orderPage() {
+            return (
+                <p>Order Page</p>
+            )
+        }
 
-        const orderPage = () => {
-            <div>OrderPage</div>  
-        };
+        function invoicePage() {
+            return (
+                <p>Invoice Page</p>
+            )
+        }
 
-        const invoicePage = () => {
-            <div>InvoicePage</div>
-        };
+        function searchPage() {
+            return (
+                <p>Search Page</p>
+            )
+        }
 
-        const searchPage = () => {
-            <div>SearchPage</div>
-        };
-
-        const orderDetails = () => {
-            <div>order details page</div>
-        };
+        function detailsPage() {
+            return (
+                <p>details Page</p>
+            )
+        }
 
         return (
            <div className="app-container" 
@@ -67,6 +86,7 @@ class App extends React.Component {
             
                 <div className="body">
                     <h5>React app rendered</h5>
+                    {orderPage()}
                 </div>
                 
                 
@@ -86,7 +106,6 @@ document.getElementById('open-warihash').addEventListener("click", function(){
 }); 
 
 </script>
-
 
 </body>
 </html>
