@@ -15,9 +15,7 @@
 <button id="open-warihash">
 Open WariHash form
 </button>
-<div id="react-statusmanager">
 
-</div>
 
 <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
@@ -32,7 +30,11 @@ class App extends React.Component {
     constructor() {
         super() 
         this.state = {
-            page: "orderpage"
+            page: "orderpage",
+            duration: "",
+            durationfocus: false,
+            durationCliked: false,
+            duration_example: ""
         }
     }
   
@@ -43,9 +45,67 @@ class App extends React.Component {
 
 
     render() {
+        const {duration, durationfocus, durationCliked, duration_example} = this.state;
+
+
         function orderPage() {
+
             return (
-                <p>Order Page</p>
+               <div>
+                    <div className="form-group">
+                        <label htmlFor="duration" className="inputlabel">
+                        Order Duration:
+                        </label>
+                        <div
+                          className={
+                            durationfocus === true
+                              ? "input-group input-group-md focused"
+                              : "input-group input-group-md"
+                          }
+                          style={{maxWidth: "285px"}}
+                        >
+                          <div className="input-group-prepend">
+                            <span
+                              className="input-group-text"
+                              style={{
+                                background: "white",
+                                border: "none",
+                                color: "rgba(0,0,0,0.5)"
+                              }}
+                            >
+                            </span>
+                          </div>
+                          <input
+                            type="text"
+                            name="duration"
+                            value={durationCliked === false ? "" : duration}
+                            placeholder={durationCliked === false ? 
+                              `Example: ${duration_example}` : duration}
+                            className="form-control inputstyles2"
+                            style={{
+                              border: "none",
+                              borderRadius: "7px",
+                              fontSize: "0.82em"
+                            }}
+                            onChange={event => this.setState({duration: event.target.value.replace(/\D/,'')})}
+
+                            autoComplete="off"
+                            required
+                          />
+                          <p style={{paddingTop: "0px", 
+                          paddingBottom: "0px", 
+                          marginBottom: "0px",
+                          position: "relative",
+                          fontSize: "0.88em",
+                          top: "6.2px",
+                          right: "13px", 
+                          zIndex: "2342342"}}>
+                          Hours
+                          </p>
+                          <br />
+                        </div>
+                    </div>
+               </div>
             )
         }
 
@@ -86,7 +146,7 @@ class App extends React.Component {
             
                 <div className="body">
                     <h5>React app rendered</h5>
-                    {orderPage()}
+                    {this.state.page === "orderpage" ? orderPage() : detailsPage()}
                 </div>
                 
                 
