@@ -33,6 +33,28 @@ class App extends React.Component {
         }
     
     }
+
+    componentDidMount() {
+     fetch("https://api.example.com/items")
+      .then(res => res.json())
+      .then(
+        (result) => {
+          this.setState({
+            isLoaded: true,
+            items: result.items
+          });
+        },
+        // Note: it's important to handle errors here
+        // instead of a catch() block so that we don't swallow
+        // exceptions from actual bugs in components.
+        (error) => {
+          this.setState({
+            isLoaded: true,
+            error
+          });
+        }
+      )
+    }
   
     unmount = () => {
         ReactDOM.unmountComponentAtNode(ReactDOM.findDOMNode(this).parentNode);
@@ -45,6 +67,7 @@ class App extends React.Component {
         function orderPage() {
             return (
                <div>
+
                     <div className="form-group" style={{display: "inline-block"}}>
                         <label>Miner Location</label>
                         <select>
@@ -91,6 +114,7 @@ class App extends React.Component {
                                 color: "rgba(0,0,0,0.5)"
                               }}
                             >
+                            <img src="/img/clock-regular.svg" />
                             </span>
                           </div>
                           <input
@@ -177,6 +201,54 @@ class App extends React.Component {
 
 
 
+                    <div className="form-group">
+                        <label htmlFor="hashrate" className="inputlabel">
+                         Email:
+                        </label>
+                        <div
+                          className="input-group input-group-md focused"
+                          style={{maxWidth: "285px"}}
+                        >
+                          <div className="input-group-prepend">
+                            <span
+                              className="input-group-text"
+                              style={{
+                                background: "white",
+                                border: "none",
+                                color: "rgba(0,0,0,0.5)"
+                              }}
+                            >
+                            
+                            </span>
+                          </div>
+                          <input
+                            type="text"
+                            name="hashrate"
+                          
+                            placeholder=""
+                            className="form-control inputstyles2"
+                            style={{
+                              border: "none",
+                              borderRadius: "7px",
+                              fontSize: "0.82em"
+                            }}
+                            
+                            autoComplete="off"
+                            required
+                          />   <p style={{paddingTop: "0px", 
+                          paddingBottom: "0px", 
+                          marginBottom: "0px",
+                          position: "relative",
+                          fontSize: "0.92em",
+                          top: "5.9px",
+                          right: "13px", 
+                          zIndex: "222"}}>
+                          
+                          </p>
+                          <br />
+                        </div>
+                        </div>
+
 
                     
                     <br />
@@ -209,7 +281,7 @@ class App extends React.Component {
         }
 
         return (
-           <div className="app-container" 
+           <div className="app-container warihash-app" 
            style={{ width: "100vw", height: "100vh", background: "white", 
            color: "black", zIndex: "58458348948348", position: "absolute", 
            top: "0", left: "0"}}>
@@ -226,7 +298,7 @@ class App extends React.Component {
            </div>
             
                 <div className="body">
-                    <h5>React app rendered</h5>
+                   
                     {this.state.page === "orderpage" ? orderPage() : detailsPage()}
                 </div>
                 
