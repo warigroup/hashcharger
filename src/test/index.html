@@ -14,19 +14,6 @@ Open WariHash form
 </button>
 
 
-<script>
-var myObject = { /*this is my object */},
-    js = document.createElement("script");
-
-js.type = "text/javascript"; 
-js.onload = function () {
-    myObject.callMethod(); 
-}
-
-document.body.appendChild(js);
-js.src = "thirdparty.js";
-</script>
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react-dom.js"></script>
 
@@ -41,6 +28,19 @@ class App extends React.Component {
         ReactDOM.unmountComponentAtNode(ReactDOM.findDOMNode(this).parentNode);
     }
     render() {
+
+        const orderPage = () => {
+              <div>OrderPage</div>  
+        };
+
+        const invoicePage = () => {
+            <div>InvoicePage</div>
+        };
+
+        const searchPage = () => {
+            <div>SearchPage</div>
+        };
+
         return (
            <div className="app-container" 
            style={{ width: "100vw", height: "100vh", background: "white", 
