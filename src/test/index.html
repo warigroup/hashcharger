@@ -43,11 +43,9 @@ class App extends React.Component {
         const {duration, durationfocus, durationCliked, duration_example} = this.state;
 
         function orderPage() {
-           
-
             return (
                <div>
-                    <div className="form-group">
+                    <div className="form-group" style={{display: "inline-block"}}>
                         <label>Miner Location</label>
                         <select>
                             <option 
@@ -56,9 +54,23 @@ class App extends React.Component {
                             >
                             North America East
                             </option>
+                            <option 
+                            className="selectstyles" 
+                            value="NA West"
+                            >
+                            North America West
+                            </option>
+
+                            <option 
+                            className="selectstyles" 
+                            value="EU East"
+                            >
+                            Europe East
+                            </option>
                         </select>
                     </div>
-                    <div className="form-group">
+
+                    <div className="form-group" style={{display: "inline-block"}}>
                         <label htmlFor="duration" className="inputlabel">
                         Order Duration:
                         </label>
@@ -94,7 +106,6 @@ class App extends React.Component {
                               fontSize: "0.82em"
                             }}
                             onChange={event => this.setState({duration: event.target.value.replace(/\D/,'')})}
-
                             autoComplete="off"
                             required
                           />
@@ -112,6 +123,68 @@ class App extends React.Component {
                         </div>
                     </div>
 
+
+
+
+                    <div className="form-group">
+                        <label htmlFor="hashrate" className="inputlabel">
+                         Hashrate to Purchase:
+                        </label>
+                        <div
+                          className="input-group input-group-md focused"
+                          style={{maxWidth: "285px"}}
+                        >
+                          <div className="input-group-prepend">
+                            <span
+                              className="input-group-text"
+                              style={{
+                                background: "white",
+                                border: "none",
+                                color: "rgba(0,0,0,0.5)"
+                              }}
+                            >
+                            
+                            </span>
+                          </div>
+                          <input
+                            type="text"
+                            name="hashrate"
+                          
+                            placeholder=""
+                            className="form-control inputstyles2"
+                            style={{
+                              border: "none",
+                              borderRadius: "7px",
+                              fontSize: "0.82em"
+                            }}
+                            
+                            autoComplete="off"
+                            required
+                          />   <p style={{paddingTop: "0px", 
+                          paddingBottom: "0px", 
+                          marginBottom: "0px",
+                          position: "relative",
+                          fontSize: "0.92em",
+                          top: "5.9px",
+                          right: "13px", 
+                          zIndex: "222"}}>
+                          
+                          </p>
+                          <br />
+                        </div>
+                        </div>
+
+
+
+
+
+                    
+                    <br />
+                    <br />
+                    <br />
+
+                    <button>Submit Order</button>
+                    <button>My Orders</button>
 
                </div>
             )
