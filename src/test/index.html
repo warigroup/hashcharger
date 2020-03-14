@@ -36,7 +36,7 @@ class App extends React.Component {
     }
 
     componentDidMount() {
-     fetch("https://api.example.com/items")
+     fetch("http://localhost:8000/get_configs/")
       .then(res => res.json())
       .then(
         (result) => {
@@ -71,6 +71,7 @@ class App extends React.Component {
 
                     <div className="form-group" style={{display: "inline-block"}}>
                         <label>Miner Location</label>
+                        <br />
                         <select>
                             <option 
                             className="selectstyles" 

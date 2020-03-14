@@ -4,3 +4,16 @@
 .warihash-app {
     font-family: 'Open Sans', sans-serif;
 }
+
+/*Font Awesome Fonts*/
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.ttf') format('truetype');
+}
+
+.sorting_asc:after {
+    content: "\f0de"; /* this is your text. You can also use UTF-8 character codes as I do here */
+    font-family: FontAwesome;
+    padding-left: 10px !important;
+    vertical-align: middle;
+}
