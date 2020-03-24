@@ -29,7 +29,8 @@ class App extends React.Component {
             page: "orderpage",
             durationfocus: false,
             durationCliked: false,
-            duration_example: ""
+            duration_example: "",
+            items: [],
         }
     
     }
@@ -37,16 +38,7 @@ class App extends React.Component {
     componentDidMount() {
      fetch("http://localhost:8000/get_configs/")
       .then(res => res.json())
-      .then(
-        (result) => {
-          this.setState({
-            isLoaded: true,
-            items: result.items
-          });
-        },
-        // Note: it's important to handle errors here
-        // instead of a catch() block so that we don't swallow
-        // exceptions from actual bugs in components.
+
         (error) => {
           this.setState({
             isLoaded: true,
@@ -54,15 +46,14 @@ class App extends React.Component {
           });
         }
       )
-    }
+    };
   
     unmount = () => {
         ReactDOM.unmountComponentAtNode(ReactDOM.findDOMNode(this).parentNode);
-    }
-
+    };
 
     render() {
-        const {duration, durationfocus, durationCliked, duration_example} = this.state;
+        const {HashrateUnit, duration, durationfocus, durationCliked, duration_example} = this.state;
 
         function orderPage() {
             return (
@@ -193,7 +184,7 @@ class App extends React.Component {
                           top: "5.9px",
                           right: "13px", 
                           zIndex: "222"}}>
-                          
+                          {HashrateUnit}
                           </p>
                           <br />
                         </div>
@@ -225,7 +216,6 @@ class App extends React.Component {
                           <input
                             type="text"
                             name="hashrate"
-                          
                             placeholder=""
                             className="form-control inputstyles2"
                             style={{
@@ -299,7 +289,6 @@ class App extends React.Component {
            </div>
             
                 <div className="body">
-                   
                     {this.state.page === "orderpage" ? orderPage() : detailsPage()}
                 </div>
                 
