@@ -17,3 +17,96 @@
     padding-left: 10px !important;
     vertical-align: middle;
 }
+
+.body {
+    width: 100%;
+}
+
+.column-1 {
+    display: inline-block;
+    width: 15%;
+}
+
+.column-2 {
+    display: inline-block;
+    width: 15%;
+}
+
+.column-3 {
+    display: inline-block;
+    width: 15%;
+}
+
+.column-4 {
+    display: inline-block;
+    width: 15%;
+}
+
+.column-5 {
+    display: inline-block;
+    width: 100%;
+    text-align: right;
+}
+
+
+.submit-btn {
+    cursor: pointer;
+    background: #3626a5;
+    font-size: 16px;
+    border-radius: 0px;
+    color: white !important;
+    border: none;
+    box-shadow: 0 4px 15px 0 rgba(129, 150, 160, 0.45);
+    padding: 8px 15px 11px 15px;
+    text-decoration: none;
+    transition: 0.5s all ease-out;
+    margin-top: 4px;
+    text-decoration: none !important;
+    display: inline-block !important;
+    margin-right: 20px;
+  }
+  .submit-btn:hover {
+    background: #5e51b7;
+    color: white;
+  }
+  .submit-btn span {
+    margin-right: 12px;
+    font-size: 20px;
+  }
+  
+  .cancel-btn {
+    cursor: pointer;
+    background: #9b9b9b;
+    font-size: 16px;
+    border-radius: 0px;
+    color: white !important;
+    border: none;
+    box-shadow: 0 4px 15px 0 rgba(129, 150, 160, 0.45);
+    padding: 8px 15px 11px 15px;
+    text-decoration: none;
+    transition: 0.5s all ease-out;
+    margin-top: 4px;
+    text-decoration: none !important;
+    display: inline-block !important;
+    margin-right: 20px;
+  }
+  
+  .cancel-btn:hover {
+    background: #a7a7a7;
+    color: white;
+  }
+  
+  .cancel-btn:active, .cancel-btn:focus {
+    background: #b9b9b9;
+    color: white;
+    box-shadow: 0 4px 15px 0 rgba(129, 150, 160, 0.45);
+    outline: none;
+  }
+  
+  .cancel-btn[disabled] {
+    background: #b9b9b9;
+    color: white;
+    box-shadow: 0 4px 15px 0 rgba(129, 150, 160, 0.45);
+    outline: none;
+  }
+  
