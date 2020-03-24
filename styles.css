@@ -48,6 +48,13 @@
     text-align: right;
 }
 
+.close-btn {
+    background: transparent;
+    cursor: pointer;
+    border: none;
+    font-size: 1.5em;
+}
+
 
 .submit-btn {
     cursor: pointer;
