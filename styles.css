@@ -18,6 +18,27 @@
     vertical-align: middle;
 }
 
+.app-container {
+  animation-name: fadein;
+  animation-duration: 0.7s;
+  animation-iteration-count: 1;
+}
+
+@keyframes fadein {
+  0% {
+    position: absolute;
+    top: -30%;
+    left: 0;
+    opacity: 0;
+  }
+  100% {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 1;
+  }
+}
+
 .body {
     width: 100%;
 }
@@ -55,7 +76,6 @@
     font-size: 1.5em;
 }
 
-
 .submit-btn {
     cursor: pointer;
     background: #3626a5;
@@ -72,15 +92,12 @@
     display: inline-block !important;
     margin-right: 20px;
   }
+  
   .submit-btn:hover {
     background: #5e51b7;
     color: white;
   }
-  .submit-btn span {
-    margin-right: 12px;
-    font-size: 20px;
-  }
-  
+
   .cancel-btn {
     cursor: pointer;
     background: #9b9b9b;
