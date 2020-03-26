@@ -30,7 +30,15 @@ class WariHashApp extends React.Component {
             durationCliked: false,
             duration_example: "",
             items: [],
-            configsdata: []
+            configsdata: [],
+            hashrate: "",
+            hashrate_units: "",
+            mining_algo: "",
+            duration: "",
+            host: "",
+            port: "",
+            email: "",
+            location: "NA East"
         }
     }
 
@@ -44,17 +52,14 @@ class WariHashApp extends React.Component {
       axios.post(
       'https://devapi.warihash.org/bid_make/',
       {
-        hashrate: hashrate,
-        hashrate_units: hashrate_units,
-        mining_algo: mining_algo,
-        duration: duration,
-        host: host,
-        port: port,
-        username: username,
-        password: password,
-        location: location,
-        discount_code: discount_code,
-        limit_price: limit_price
+        hashrate: this.state.hashrate,
+        hashrate_units: this.state.hashrate_units,
+        mining_algo: this.state.mining_algo,
+        duration: this.state.duration,
+        host: this.state.host,
+        port: this.state.port,
+        email: this.state.email,
+        location: this.state.location
       },
       { headers: {"Content-Type": "application/json"} }
     )
@@ -120,24 +125,22 @@ class WariHashApp extends React.Component {
                               }}
                             >
                             <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="clock" 
-                            className="svg-inline--fa fa-clock fa-w-16" role="img" 
-                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            className="svg-inline--fa fa-clock fa-w-16" role="img" style={{width: "25px"}} 
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 514 514">
                             <path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm61.8-104.4l-84.9-61.7c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v141.7l66.8 48.6c5.4 3.9 6.5 11.4 2.6 16.8L334.6 349c-3.9 5.3-11.4 6.5-16.8 2.6z"></path></svg>
                             </span>
                           </div>
                           <input
                             type="text"
                             name="duration"
-                            value={durationCliked === false ? "" : duration}
-                            placeholder={durationCliked === false ? 
-                              `Example: ${duration_example}` : duration}
+                            
                             className="form-control inputstyles2"
                             style={{
                               border: "none",
                               borderRadius: "7px",
                               fontSize: "0.82em"
                             }}
-                            onChange={event => this.setState({duration: event.target.value.replace(/\D/,'')})}
+                            onChange={event => this.setState({duration: event.target.value})}
                             autoComplete="off"
                             required
                           />
@@ -181,7 +184,7 @@ class WariHashApp extends React.Component {
                           <input
                             type="text"
                             name="hashrate"
-                          
+                            onChange={event => this.setState({hashrate: event.target.value})}
                             placeholder=""
                             className="form-control inputstyles2"
                             style={{
@@ -239,9 +242,8 @@ class WariHashApp extends React.Component {
                               borderRadius: "7px",
                               fontSize: "0.82em"
                             }}
-                            
+                            onChange={event => this.setState({email: event.target.value})}
                             autoComplete="off"
-                            required
                           />   <p style={{paddingTop: "0px", 
                           paddingBottom: "0px", 
                           marginBottom: "0px",
@@ -262,10 +264,7 @@ class WariHashApp extends React.Component {
                     <br />
                     <br />
 
-                    <div className="column-5">
-                      <button className="cancel-btn" >Cancel</button>
-                      <button className="submit-btn">Submit Order</button>
-                    </div>
+                   
                </div>
             )
         }
@@ -307,6 +306,16 @@ class WariHashApp extends React.Component {
 
                 <div className="body">
                     {this.state.page === "orderpage" ? orderPage() : detailsPage()}
+
+
+                    <div className="buttons-row">
+                       <div className="column-5">
+                        <button className="cancel-btn" onClick={() => this.unmount()}>Cancel</button>
+                        { this.state.page === "orderpage" ?
+                        <button className="submit-btn" onClick={() => this.submitOrder()}>Submit Order</button>
+                        : null }
+                      </div>
+                    </div>
                 </div>
                 
             </div>
