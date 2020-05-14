@@ -41,7 +41,7 @@ Demo link: https://devmarket.warihash.org/demo
 where you will fetch the hashcharger javascript library, should be set to https://cdn.jsdelivr.net/gh/warigroup/hashcharger@1/hashcharger.js unless you want to serve this from your own servers.
 
 #### id 
-don't change this ID parameter. id should be set to "hashcharger"
+don't change this id parameter. id should be set to "hashcharger"
 
 #### token
 unique token value for authorization that we will give you. This identifies who you are to WariHash.
@@ -62,9 +62,19 @@ stratum password that hashing power wil be directed to
 algorithm to purchase hashing power for (currently available: sha256d, scrypt, handshake, ethash, equihash-zcash)
 
 #### theme-navbg
+bottom navigation background color
+
 #### theme-navtexts
+bottom navigation text color
+
 #### theme-primary
+primary theme color on the main page
+
 #### theme-secondary
+secondary theme color on order history page
+
 #### theme-buttontexts
+button text color
+
 #### theme-tabletexts
-#### fullscreen
+table menu text color
