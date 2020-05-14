@@ -31,8 +31,7 @@ Demo link: https://devmarket.warihash.org/demo
   theme-primary="3626a5"
   theme-secondary="233f5c"
   theme-buttontexts="ffffff"
-  theme-tabletexts="ffffff"
-  fullscreen="off">
+  theme-tabletexts="ffffff">
 </script>
 ```
 
