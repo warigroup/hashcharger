@@ -18,7 +18,7 @@ Demo link: https://devmarket.warihash.org/demo
 
 ```
 <script defer 
-  src="https://app.warihash.com/static/hashcharger.js"
+  src="https://cdn.jsdelivr.net/gh/warigroup/hashcharger@1/hashcharger.js"
   id="hashcharger"
   token="6j5KRGUkhUZfsXMgMATUgb"
   stratum-host="stratum.slushpool.com" 
@@ -37,6 +37,9 @@ Demo link: https://devmarket.warihash.org/demo
 ```
 
 ## Configurations
+
+#### src
+where you will fetch the hashcharger javascript library, should be set to https://cdn.jsdelivr.net/gh/warigroup/hashcharger@1/hashcharger.js unless you want to serve this from your own servers.
 
 #### id 
 don't change this ID parameter. id should be set to "hashcharger"
