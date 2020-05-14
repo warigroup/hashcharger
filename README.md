@@ -38,7 +38,7 @@ Demo link: https://devmarket.warihash.org/demo
 ## Configurations
 
 #### src
-where you will fetch the hashcharger javascript library, should be set to https://cdn.jsdelivr.net/gh/warigroup/hashcharger@1/hashcharger.js unless you want to serve this from your own servers.
+where you will fetch the hashcharger javascript library, should be set to https://cdn.jsdelivr.net/gh/warigroup/hashcharger@1/hashcharger.js unless you want to serve this file from your own servers.
 
 #### id 
 don't change this id parameter. id should be set to "hashcharger"
@@ -47,10 +47,10 @@ don't change this id parameter. id should be set to "hashcharger"
 unique token value for authorization that we will give you. This identifies who you are to WariHash.
 
 #### stratum-host
-stratum host where hashing power will be directed to
+stratum host where hashing power will be directed to (i.e, stratum.slushpool.com)
 
 #### stratum-port
-port where hashing power will be directed to
+port number where hashing power will be directed to 
 
 #### stratum-username
 stratum username that hashing power will be direted to
@@ -62,19 +62,19 @@ stratum password that hashing power wil be directed to
 algorithm to purchase hashing power for (currently available: sha256d, scrypt, handshake, ethash, equihash-zcash)
 
 #### theme-navbg
-bottom navigation background color
+bottom navigation background color in hex color code
 
 #### theme-navtexts
-bottom navigation text color
+bottom navigation text color in hex color code
 
 #### theme-primary
-primary theme color on the main page
+primary theme color on the main page in hex color code
 
 #### theme-secondary
-secondary theme color on order history page
+secondary theme color on order history page in hex color code
 
 #### theme-buttontexts
-button text color
+button text color in hex color code
 
 #### theme-tabletexts
-table menu text color
+table menu text color in hex color code
