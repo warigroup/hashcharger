@@ -2,7 +2,7 @@
 
 Hashcharger can be integrated into any webpage as a Javscript widget and allows users to purchase hashing power from WariHash's spot market. 
 
-Demo link: https://devmarket.warihash.org/demo
+Demo link: https://warihash.com/hashcharger-for-mining-pools/
 
 ## Installation guide
 
@@ -61,20 +61,24 @@ stratum password that hashing power wil be directed to
 #### algorithm
 algorithm to purchase hashing power for (currently available: sha256d, scrypt, handshake, ethash, equihash-zcash)
 
+## Theme color hex codes 
+
+#### !! Warning: don't include # in hex code
+
 #### theme-navbg
-bottom navigation background color in hex color code
+bottom navigation background color in hex code
 
 #### theme-navtexts
-bottom navigation text color in hex color code
+bottom navigation text color in hex code
 
 #### theme-primary
-primary theme color on the main page in hex color code
+primary theme color on the main page in hex code
 
 #### theme-secondary
-secondary theme color on order history page in hex color code
+secondary theme color on order history page hex code
 
 #### theme-buttontexts
-button text color in hex color code
+button text color hex code
 
 #### theme-tabletexts
-table menu text color in hex color code
+table menu text color hex code
