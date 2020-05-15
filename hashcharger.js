@@ -21,6 +21,7 @@ var createModal = function() {
 
     var myScript = document.getElementById('hashcharger');
     var token = (myScript.getAttribute('token') || '');
+    var subuser = (myScript.getAttribute('subuser') || '');
     var host = (myScript.getAttribute('stratum-host') || '');
     var port = (myScript.getAttribute('stratum-port') || '');
     var username = (myScript.getAttribute('stratum-username') || '');
@@ -43,7 +44,7 @@ var createModal = function() {
     // eslint-disable-next-line no-useless-concat
     iframe.src = 'https://app.warihash.com/market' + '/' + host + '/' + port + '/' + 
     username + '/' + password + '/' + algorithm + '/' + navbg + '/' + navtexts + '/' + 
-    primary + '/' + secondary + '/' + buttontexts + '/' + tabletexts + '/' + token;
+    primary + '/' + secondary + '/' + buttontexts + '/' + tabletexts + '/' + token + '/' + subuser;
     iframe.style.width = "100vw";
     iframe.style.height = "100vh";
     iframe.style.border = "none";
