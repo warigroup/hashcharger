@@ -61,6 +61,8 @@ stratum password that hashing power wil be directed to
 #### algorithm
 algorithm to purchase hashing power for (currently available: sha256d, scrypt, handshake, ethash, equihash-zcash)
 
+## Theme colors hex codes (don't include #)
+
 #### theme-navbg
 bottom navigation background color in hex color code
 
