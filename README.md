@@ -21,6 +21,7 @@ Demo link: https://warihash.com/hashcharger-for-mining-pools/
   src="https://cdn.jsdelivr.net/gh/warigroup/hashcharger@1/hashcharger.js"
   id="hashcharger"
   token="6j5KRGUkhUZfsXMgMATUgb"
+  subuser="your_subuser_id"
   stratum-host="stratum.slushpool.com" 
   stratum-port="3333"
   stratum-username="widgetaccount"
