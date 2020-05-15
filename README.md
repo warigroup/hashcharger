@@ -39,50 +39,50 @@ Demo link: https://warihash.com/hashcharger-for-mining-pools/
 ## Configurations
 
 #### src
-where you will fetch the hashcharger javascript library, should be set to https://cdn.jsdelivr.net/gh/warigroup/hashcharger@1/hashcharger.js unless you want to serve this file from your own servers.
+Where you will fetch the hashcharger javascript library, should be set to https://cdn.jsdelivr.net/gh/warigroup/hashcharger@1/hashcharger.js unless you want to serve this file from your own servers.
 
 #### id 
-don't change this id parameter. id should be set to "hashcharger"
+Don't change this id parameter. id should be set to "hashcharger"
 
 #### token
-unique token value for authorization that we will give you. This identifies who you are to WariHash.
+Unique token value for authorization that we will give you. This identifies who you are to WariHash.
 
 #### subuser
-the subuser value identifies who this user is. By using a unique identifier per user (it can be any string, such as an Id, username, or email), each user will be able to retrieve their own orders in the order history page of HashCharger. In addition, the HashCharger integrator will be able to tell which of their user bought hashing power by the subuser value. 
+The subuser value identifies who this user is. By using a unique identifier per user (it can be any string, such as an Id, username, or email), each user will be able to retrieve their own orders in the order history page of HashCharger. In addition, the HashCharger integrator will be able to tell which of their user bought hashing power by the subuser value. 
 
 #### stratum-host
-stratum host where hashing power will be directed to (i.e, stratum.slushpool.com)
+Stratum host where hashing power will be directed to (i.e, stratum.slushpool.com)
 
 #### stratum-port
-port number where hashing power will be directed to 
+Port number where hashing power will be directed to 
 
 #### stratum-username
-stratum username that hashing power will be direted to
+Stratum username that hashing power will be direted to
 
 #### stratum-password
-stratum password that hashing power wil be directed to
+Stratum password that hashing power wil be directed to
 
 #### algorithm
-algorithm to purchase hashing power for (currently available: sha256d, scrypt, handshake, ethash, equihash-zcash)
+Algorithm to purchase hashing power for (currently available: sha256d, scrypt, handshake, ethash, equihash-zcash)
 
 ## Theme color hex codes 
 
 #### !! Warning: don't include # in hex code
 
 #### theme-navbg
-bottom navigation background color in hex code
+Bottom navigation background color in hex code
 
 #### theme-navtexts
-bottom navigation text color in hex code
+Bottom navigation text color in hex code
 
 #### theme-primary
-primary theme color on the main page in hex code
+Primary theme color on the main page in hex code
 
 #### theme-secondary
-secondary theme color on order history page hex code
+Secondary theme color on order history page hex code
 
 #### theme-buttontexts
-button text color hex code
+Button text color hex code
 
 #### theme-tabletexts
-table menu text color hex code
+Table menu text color hex code
