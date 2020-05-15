@@ -48,7 +48,7 @@ don't change this id parameter. id should be set to "hashcharger"
 unique token value for authorization that we will give you. This identifies who you are to WariHash.
 
 #### subuser
-subuser id
+the subuser value identifies who this user is. By using a unique identifier per user (it can be any string, such as an Id, username, or email), each user will be able to retrieve their own orders in the order history page of HashCharger. In addition, the HashCharger integrator will be able to tell which of their user bought hashing power by the subuser value. 
 
 #### stratum-host
 stratum host where hashing power will be directed to (i.e, stratum.slushpool.com)
