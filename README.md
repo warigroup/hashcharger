@@ -61,22 +61,22 @@ stratum password that hashing power wil be directed to
 #### algorithm
 algorithm to purchase hashing power for (currently available: sha256d, scrypt, handshake, ethash, equihash-zcash)
 
-## Theme colors hex code (don't include #)
+## Theme color hex codes (don't include #)
 
 #### theme-navbg
-bottom navigation background color in hex color code
+bottom navigation background color in hex code
 
 #### theme-navtexts
-bottom navigation text color in hex color code
+bottom navigation text color in hex code
 
 #### theme-primary
-primary theme color on the main page in hex color code
+primary theme color on the main page in hex code
 
 #### theme-secondary
-secondary theme color on order history page in hex color code
+secondary theme color on order history page hex code
 
 #### theme-buttontexts
-button text color in hex color code
+button text color hex code
 
 #### theme-tabletexts
-table menu text color in hex color code
+table menu text color hex code
