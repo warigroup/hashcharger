@@ -63,7 +63,7 @@ algorithm to purchase hashing power for (currently available: sha256d, scrypt, h
 
 ## Theme color hex codes 
 
-#### !! Warning: don't include # in hex code !!
+#### !! Warning: don't include # in hex code
 
 #### theme-navbg
 bottom navigation background color in hex code
