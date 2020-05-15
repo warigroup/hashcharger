@@ -42,7 +42,7 @@ var createModal = function() {
 
     var iframe = document.createElement('iframe');
     // eslint-disable-next-line no-useless-concat
-    iframe.src = 'https://app.warihash.com/market' + '/' + host + '/' + port + '/' + 
+    iframe.src = 'https://app.warihash.org/market' + '/' + host + '/' + port + '/' + 
     username + '/' + password + '/' + algorithm + '/' + navbg + '/' + navtexts + '/' + 
     primary + '/' + secondary + '/' + buttontexts + '/' + tabletexts + '/' + token + '/' + subuser;
     iframe.style.width = "100vw";
