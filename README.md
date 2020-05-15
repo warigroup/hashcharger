@@ -20,7 +20,7 @@ Demo link: https://warihash.com/hashcharger-for-mining-pools/
 <script defer 
   src="https://cdn.jsdelivr.net/gh/warigroup/hashcharger@1/hashcharger.js"
   id="hashcharger"
-  token="6j5KRGUkhUZfsXMgMATUgb"
+  token="FRxtvCGmNWV9AqJRKAs7CB"
   subuser="your_subuser_id"
   stratum-host="stratum.slushpool.com" 
   stratum-port="3333"
