@@ -2,7 +2,7 @@
 
 Hashcharger can be integrated into any webpage as a Javscript widget and allows users to purchase hashing power from WariHash's spot market. 
 
-Demo link: https://devmarket.warihash.org/demo
+Demo link: https://warihash.com/hashcharger-for-mining-pools/
 
 ## Installation guide
 
