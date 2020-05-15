@@ -46,6 +46,9 @@ don't change this id parameter. id should be set to "hashcharger"
 #### token
 unique token value for authorization that we will give you. This identifies who you are to WariHash.
 
+#### subuser
+subuser id
+
 #### stratum-host
 stratum host where hashing power will be directed to (i.e, stratum.slushpool.com)
 
