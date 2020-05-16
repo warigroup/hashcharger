@@ -22,7 +22,7 @@ Demo link: https://warihash.com/hashcharger-for-mining-pools/
 
 ```
 <script defer 
-  src="https://cdn.jsdelivr.net/gh/warigroup/hashcharger@1/hashcharger.js"
+  src="https://cdn.jsdelivr.net/gh/warigroup/hashcharger@1.0.2/hashcharger.js"
   id="hashcharger"
   token="FRxtvCGmNWV9AqJRKAs7CB"
   subuser="your_subuser_id"
