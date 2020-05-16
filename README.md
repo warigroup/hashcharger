@@ -1,8 +1,12 @@
-# HashCharger Modal Widget
+# Hash Charger Modal Widget
 
-Hashcharger can be integrated into any webpage as a Javscript widget and allows users to purchase hashing power from WariHash's spot market. 
+Hash Charger can be integrated into any webpage as a Javscript widget and allows users to purchase hashing power from WariHash's spot market. We are currently in invite-only alpha stage for early adopters. Contact support@warihash.com if you would like to try out Hash Charger.
 
 Demo link: https://warihash.com/hashcharger-for-mining-pools/
+
+## Release Notes
+
+v1.0.0 : First release. You will not able to set/collect fees yet, this will be in the next release. 
 
 ## Installation guide
 
