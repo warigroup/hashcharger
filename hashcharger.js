@@ -6,7 +6,7 @@ if (!document.getElementById(cssId)) {
    link.id   = cssId;
    link.rel  = 'stylesheet';
    link.type = 'text/css';
-   link.href = 'https://cdn.jsdelivr.net/gh/warigroup/hashcharger@1.0.2/hashcharger.css';
+   link.href = 'https://cdn.jsdelivr.net/gh/warigroup/hashcharger@1/hashcharger.css';
    link.media = 'all';
    head.appendChild(link);
 };
