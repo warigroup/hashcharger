@@ -37,6 +37,7 @@ var createModal = function() {
     var modalWindow = document.createElement('div');
     modalWindow.className = 'hashcharger-widget';
     modalWindow.id = 'hashcharger-widget';
+    modalWindow.style.overflow = "hidden"; 
     document.getElementsByTagName('body')[0].appendChild(modalWindow);
 
 
