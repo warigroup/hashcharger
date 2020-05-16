@@ -6,7 +6,7 @@ Demo link: https://warihash.com/hashcharger-for-mining-pools/
 
 ## Release Notes
 
-[v1.0.2](https://github.com/warigroup/hashcharger/releases/tag/v1.0.2) : First alpha release. You will not able to set/collect fees yet, this will be in the next release. 
+[v1.0.0](https://github.com/warigroup/hashcharger/releases/tag/v1.0.0) : First alpha release. You will not able to set/collect fees yet, this will be in the next release. 
 
 ## Installation guide
 
@@ -22,7 +22,7 @@ Demo link: https://warihash.com/hashcharger-for-mining-pools/
 
 ```
 <script defer 
-  src="https://cdn.jsdelivr.net/gh/warigroup/hashcharger@1.0.2/hashcharger.js"
+  src="https://cdn.jsdelivr.net/gh/warigroup/hashcharger@1/hashcharger.js"
   id="hashcharger"
   token="FRxtvCGmNWV9AqJRKAs7CB"
   subuser="your_subuser_id"
@@ -43,7 +43,7 @@ Demo link: https://warihash.com/hashcharger-for-mining-pools/
 ## Configurations
 
 #### src
-Where you will fetch the hashcharger javascript library, should be set to https://cdn.jsdelivr.net/gh/warigroup/hashcharger@1.0.2/hashcharger.js unless you want to serve this file from your own servers.
+Where you will fetch the hashcharger javascript library, should be set to https://cdn.jsdelivr.net/gh/warigroup/hashcharger@1/hashcharger.js unless you want to serve this file from your own servers.
 
 #### id 
 Don't change this id parameter. id should be set to "hashcharger"
