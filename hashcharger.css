@@ -1,4 +1,4 @@
-.hashcharger-widget {
+#hashcharger-widget {
   animation-name: fadein-animation;
   animation-duration: 1s;
   animation-iteration-count: 1;
@@ -12,7 +12,7 @@
   left: 0;
   padding-bottom: 0px;
   padding-top: 0px;
-  overflow: hidden !important;
+  overflow-y: hidden !important;
 }
 
 .widget-fadeout {

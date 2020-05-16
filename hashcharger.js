@@ -14,7 +14,6 @@ if (!document.getElementById(cssId)) {
 window.addEventListener("load", () => {
 
 var widgetOpenBtn = document.getElementsByClassName("open-hashcharger");
-
 var createModal = function() {
     var root = document.getElementsByTagName( 'html' )[0];
     root.classList.add("hashcharger-opened");
@@ -35,10 +34,8 @@ var createModal = function() {
     var tabletexts = (myScript.getAttribute('theme-tabletexts') || '');
 
     var modalWindow = document.createElement('div');
-    modalWindow.className = 'hashcharger-widget';
     modalWindow.id = 'hashcharger-widget';
     document.getElementsByTagName('body')[0].appendChild(modalWindow);
-
 
     var iframe = document.createElement('iframe');
     // eslint-disable-next-line no-useless-concat
@@ -61,10 +58,10 @@ var createModal = function() {
     widgetCloseBtn.addEventListener("click", function () {
         var elem = document.getElementById('hashcharger-widget');
         elem.classList.add('widget-fadeout');
+        root.classList.remove("hashcharger-opened");
         setTimeout(function(){ 
             elem.parentNode.removeChild(elem); 
             var root = document.getElementsByTagName( 'html' )[0];
-            root.classList.remove("hashcharger-opened");
         }, 450);
       });
     modalWindow.appendChild(widgetCloseBtn);
