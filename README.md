@@ -43,7 +43,7 @@ Demo link: https://warihash.com/hashcharger-for-mining-pools/
 ## Configurations
 
 #### src
-Where you will fetch the hashcharger javascript library, should be set to https://cdn.jsdelivr.net/gh/warigroup/hashcharger@1/hashcharger.js unless you want to serve this file from your own servers.
+Where you will fetch the hashcharger javascript library, should be set to https://cdn.jsdelivr.net/gh/warigroup/hashcharger@1.0.2/hashcharger.js unless you want to serve this file from your own servers.
 
 #### id 
 Don't change this id parameter. id should be set to "hashcharger"
