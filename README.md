@@ -74,13 +74,13 @@ Algorithm to purchase hashing power for (currently available: sha256d, scrypt, h
 #### !! Warning: don't include # in hex code
 
 #### theme-navbg
-Bottom navigation background color in hex code
+Bottom navigation background color hex code
 
 #### theme-navtexts
-Bottom navigation text color in hex code
+Bottom navigation text color hex code
 
 #### theme-primary
-Primary theme color on the main page in hex code
+Primary theme color on the main page hex code
 
 #### theme-secondary
 Secondary theme color on order history page hex code
