@@ -71,7 +71,8 @@ Algorithm to purchase hashing power for (currently available: sha256d, scrypt, h
 
 ## Theme color hex codes 
 
-#### !! Warning: don't include # in hex code. Also, colors must use hex code values. parameters can't use color names. i.e. violet, purple, cyan, etc.
+#### !! Warning: don't include # in hex code. 
+#### Colors must use six digit hex code values. Parameters can't use color names. i.e. violet, purple, cyan, etc.
 
 #### theme-navbg
 Bottom navigation background color hex code
