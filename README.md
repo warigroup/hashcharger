@@ -50,7 +50,7 @@ If you want to serve the js file from your own server, please make sure to inclu
 
 ```
 <script defer 
-  src="hashcharger.js"
+  src="/path/to/your/hashcharger.js"
 ```
 
 #### id 
