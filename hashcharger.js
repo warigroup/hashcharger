@@ -16,9 +16,10 @@ window.addEventListener("load", () => {
 var widgetOpenBtn = document.getElementsByClassName("open-hashcharger");
 
 var createModal = function() {
+    if (!document.getElementById('hashcharger-widget')) {
     var root = document.getElementsByTagName( 'html' )[0];
     root.classList.add("hashcharger-opened");
-
+    
     var myScript = document.getElementById('hashcharger');
     var token = (myScript.getAttribute('token') || '');
     var subuser = (myScript.getAttribute('subuser') || '');
@@ -34,7 +35,6 @@ var createModal = function() {
     var buttontexts = (myScript.getAttribute('theme-buttontexts') || '');
     var tabletexts = (myScript.getAttribute('theme-tabletexts') || '');
 
-    if (!document.getElementById('hashcharger-widget')) {
     var modalWindow = document.createElement('div');
     modalWindow.className = 'hashcharger-widget';
     modalWindow.id = 'hashcharger-widget';
