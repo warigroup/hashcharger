@@ -34,12 +34,12 @@ var createModal = function() {
     var buttontexts = (myScript.getAttribute('theme-buttontexts') || '');
     var tabletexts = (myScript.getAttribute('theme-tabletexts') || '');
 
+    if (!document.getElementById('hashcharger-widget')) {
     var modalWindow = document.createElement('div');
     modalWindow.className = 'hashcharger-widget';
     modalWindow.id = 'hashcharger-widget';
     modalWindow.style.overflow = "hidden"; 
     document.getElementsByTagName('body')[0].appendChild(modalWindow);
-
 
     var iframe = document.createElement('iframe');
     // eslint-disable-next-line no-useless-concat
@@ -69,6 +69,8 @@ var createModal = function() {
         }, 450);
       });
     modalWindow.appendChild(widgetCloseBtn);
+
+    }
 };
 
 for (var i = 0; i < widgetOpenBtn.length; i++) {
