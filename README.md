@@ -6,7 +6,7 @@ Demo link: https://warihash.com/hashcharger-for-mining-pools/
 
 ## Release Notes
 
-[1.0.0](https://github.com/warigroup/hashcharger/releases/tag/1.0.0) : First alpha release. You will not able to set/collect fees yet, this will be in the next release. 
+[1.0.3](https://github.com/warigroup/hashcharger/releases/tag/1.0.3) : First alpha release. You will not able to set/collect fees yet, this will be in the next release. 
 
 ## Installation guide
 
