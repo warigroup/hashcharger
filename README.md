@@ -71,16 +71,17 @@ Algorithm to purchase hashing power for (currently available: sha256d, scrypt, h
 
 ## Theme color hex codes 
 
-#### !! Warning: don't include # in hex code
+#### !! Warning: don't include # in hex code. 
+#### Colors must use six digit hex code values. Parameters can't use color names. i.e. violet, purple, cyan, etc.
 
 #### theme-navbg
-Bottom navigation background color in hex code
+Bottom navigation background color hex code
 
 #### theme-navtexts
-Bottom navigation text color in hex code
+Bottom navigation text color hex code
 
 #### theme-primary
-Primary theme color on the main page in hex code
+Primary theme color on the main page hex code
 
 #### theme-secondary
 Secondary theme color on order history page hex code
