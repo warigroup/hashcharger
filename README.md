@@ -40,17 +40,18 @@ Demo link: https://warihash.com/hashcharger-for-mining-pools/
 </script>
 ```
 
-Alternatively, you can use hashcharger.js file as src. Please make sure to include hashcharger.js file in a correct path.
-
-```
-<script defer 
-  src="hashcharger.js"
-```
 
 ## Configurations
 
 #### src
 Where you will fetch the hashcharger javascript library, should be set to https://cdn.jsdelivr.net/gh/warigroup/hashcharger@1/hashcharger.js unless you want to serve this file from your own servers.
+
+If you want to serve the js file from your own server, please make sure to include hashcharger.js file in a correct path.
+
+```
+<script defer 
+  src="hashcharger.js"
+```
 
 #### id 
 Don't change this id parameter. id should be set to "hashcharger"
