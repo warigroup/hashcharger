@@ -45,7 +45,6 @@ Alternatively, you can use hashcharger.js file as src. Please make sure to inclu
 ```
 <script defer 
   src="hashcharger.js"
-
 ```
 
 ## Configurations
