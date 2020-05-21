@@ -22,7 +22,7 @@ Demo link: https://warihash.com/hashcharger-for-mining-pools/
 
 ```
 <script defer 
-  src="https://cdn.jsdelivr.net/gh/warigroup/hashcharger@1/hashcharger.js"
+  src="https://cdn.jsdelivr.net/gh/warigroup/hashcharger@1.0.3/hashcharger.js"
   id="hashcharger"
   token="FRxtvCGmNWV9AqJRKAs7CB"
   subuser="your_subuser_id"
@@ -44,7 +44,7 @@ Demo link: https://warihash.com/hashcharger-for-mining-pools/
 ## Configurations
 
 #### src
-Where you will fetch the hashcharger javascript library, should be set to https://cdn.jsdelivr.net/gh/warigroup/hashcharger@1/hashcharger.js unless you want to serve this file from your own servers.
+Where you will fetch the hashcharger javascript library, should be set to https://cdn.jsdelivr.net/gh/warigroup/hashcharger@1.0.3/hashcharger.js unless you want to serve this file from your own servers.
 
 If you want to serve the js file from your own server, please make sure to include hashcharger.js file in a correct path.
 
