@@ -42,6 +42,8 @@ Demo link: https://warihash.com/hashcharger-for-mining-pools/
 </script>
 ```
 
+Please check 'examples' folder for more info.
+
 ## Configurations
 
 #### src
