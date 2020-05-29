@@ -42,6 +42,8 @@ Demo link: https://warihash.com/hashcharger-for-mining-pools/
 </script>
 ```
 
+## Installation guide for React frontend
+
 If you're using React, you can add our script using below method: 
 
 ```
