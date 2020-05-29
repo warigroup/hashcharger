@@ -10,7 +10,7 @@ class App extends Component {
     script.setAttribute('stratum-host', `${hostaddress}`);
     script.setAttribute('stratum-port', `${port}`);
     script.setAttribute('stratum-username', `${username}`);
-    script.setAttribute('stratum-password', `x`);
+    script.setAttribute('stratum-password', `${password}`);
     script.setAttribute('algorithm', 'equihash-zcash');
     script.setAttribute('theme-navbg', '3626a5');
     script.setAttribute('theme-navtexts', 'ffffff');
