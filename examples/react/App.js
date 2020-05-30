@@ -23,6 +23,7 @@ class App extends Component {
   }
 
   componentWillUnmount() {
+    // (optional) remove your script when component unmounts
     const script = document.getElementById('hashcharger');
     document.body.removeChild(script);
   }
