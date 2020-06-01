@@ -8,7 +8,7 @@
 export default {
    mounted: function() {
      const script = document.createElement('script');
-     script.src = 'https://cdn.jsdelivr.net/gh/warigroup/hashcharger@1.0.3/hashcharger.js';
+     script.src = 'https://cdn.jsdelivr.net/gh/warigroup/hashcharger@1/hashcharger.js';
      script.id = 'hashcharger';
      script.setAttribute('token', 'a46KwFe23rgtrgaAfrggWo');
      // pass in your dynamic subuser and stratum config here.

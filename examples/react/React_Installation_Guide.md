@@ -5,7 +5,7 @@ If you're using React, you can add our script using below method:
 ```
   componentDidMount() {
     const script = document.createElement("script");
-    script.src = "https://cdn.jsdelivr.net/gh/warigroup/hashcharger@1.0.3/hashcharger.js";
+    script.src = "https://cdn.jsdelivr.net/gh/warigroup/hashcharger@1/hashcharger.js";
     script.id = 'hashcharger';
     script.setAttribute('token', 'a46KwFe23rgtrgaAfrggWo');
     script.setAttribute('subuser', `${subuser}`)
