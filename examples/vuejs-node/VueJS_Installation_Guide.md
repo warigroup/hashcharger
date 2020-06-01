@@ -1,21 +1,21 @@
-## Installation guide for Vue.js frontend
+## Installation guide for Vue.Js frontend
 
-If you're using VueJS on a multipage site, you can add our script using below method: 
+If you're using VueJS single page application (SPA), you can add our script using below method: 
 
 ```
-new Vue({
-   el: '#app',
+<script>
+export default {
    mounted: function() {
      const script = document.createElement('script');
      script.src = 'https://cdn.jsdelivr.net/gh/warigroup/hashcharger@1.0.3/hashcharger.js';
      script.id = 'hashcharger';
      script.setAttribute('token', 'a46KwFe23rgtrgaAfrggWo');
      // pass in your dynamic subuser and stratum config here.
-     script.setAttribute('subuser', 'a46KwFe23rgtrgaAfrggWo');
-     script.setAttribute('stratum-host', 'a46KwFe23rgtrgaAfrggWo');
-     script.setAttribute('stratum-port', 'a46KwFe23rgtrgaAfrggWo');
-     script.setAttribute('stratum-username', 'a46KwFe23rgtrgaAfrggWo');
-     script.setAttribute('stratum-password', 'a46KwFe23rgtrgaAfrggWo');
+     script.setAttribute('subuser', `${subuser}`);
+     script.setAttribute('stratum-host', `${hostaddress}`);
+     script.setAttribute('stratum-port', `${port}`);
+     script.setAttribute('stratum-username', `${username}`);
+     script.setAttribute('stratum-password', `${password}`);
      script.setAttribute('algorithm', 'equihash-zcash');
      script.setAttribute('theme-navbg', '3626a5');
      script.setAttribute('theme-navtexts', 'ffffff');
@@ -30,8 +30,9 @@ new Vue({
     const script = document.getElementById('hashcharger');
     document.body.removeChild(script);
   }
-})
-
+};
+</script>
 ```
+
 Please use setAttribute() to add attributes to script tag. 
 https://developer.mozilla.org/en-US/docs/Web/API/Element/setAttribute
