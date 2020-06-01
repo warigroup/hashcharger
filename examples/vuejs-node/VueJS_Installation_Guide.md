@@ -1,6 +1,6 @@
-## Installation guide for Vue.Js frontend
+## Installation guide for Vue.js frontend
 
-If you're using VueJS single page application (SPA), you can add our script using below method: 
+If you're using Vue.js single page application (SPA), you can add our script using below method: 
 
 ```
 <script>

@@ -1,6 +1,6 @@
 ## Installation guide for Vue.js frontend
 
-If you're using VueJS on a multipage site, you can add our script using below method: 
+If you're using Vue.js on a multipage site, you can add our script using below method: 
 
 ```
 new Vue({
