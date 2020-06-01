@@ -42,7 +42,7 @@ Demo link: https://warihash.com/hashcharger-for-mining-pools/
 </script>
 ```
 
-Please check 'examples' folder for more info.
+If you're using Angular, React or Vue.js frontend, please check 'examples' folder for more info.
 
 ## Configurations
 
