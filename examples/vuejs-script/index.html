@@ -5,10 +5,13 @@
   <title>HashCharger Demo</title>
   <meta name="viewport" content="width=device-width,initial-scale=1" />
 </head>
-<body id="apps">
-
+<body>
+    <div id="app">
   <button class="open-hashcharger">Open HashCharger</button>
 
+
+
+</div>
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script>
 new Vue({
@@ -19,11 +22,11 @@ new Vue({
     script.id = 'hashcharger';
     script.setAttribute('token', 'a46KwFe23rgtrgaAfrggWo');
     // pass in your dynamic subuser and stratum config here.
-    script.setAttribute('subuser', `${subuser}`);
-    script.setAttribute('stratum-host', `${hostaddress}`);
-    script.setAttribute('stratum-port', `${port}`);
-    script.setAttribute('stratum-username', `${username}`);
-    script.setAttribute('stratum-password', `${password}`);
+    script.setAttribute('subuser', '${subuser}');
+    script.setAttribute('stratum-host', '${hostaddress}');
+    script.setAttribute('stratum-port', '${port}');
+    script.setAttribute('stratum-username', '${username}');
+    script.setAttribute('stratum-password', '${password}');
     script.setAttribute('algorithm', 'equihash-zcash');
     script.setAttribute('theme-navbg', '3626a5');
     script.setAttribute('theme-navtexts', 'ffffff');
@@ -40,6 +43,5 @@ new Vue({
   }
 })
 </script>
-
 </body>
 </html>
