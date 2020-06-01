@@ -3,6 +3,11 @@
 If you're using Vue.js single page application (SPA), you can add our script using below method: 
 
 ```
+<template>
+  <div>
+    <button class="open-hashcharger">Click me</button>
+  </div>
+</template>
 <script>
 export default {
    mounted: function() {
